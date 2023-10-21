@@ -10,8 +10,8 @@ let acel;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  posX = windowWidth / 2;
-  posY = windowHeight * 0.2;
+  posX = (random(10, 225, 10), windowWidth / 2);
+  posY = (random(10, 225), windowHeight * 0.2);
   rectMode(CENTER);
   diam = random(10, 50);
   rad = diam / 2;
@@ -24,14 +24,14 @@ function setup() {
 }
 
 function draw() {
-  background(255, 200, 150);
+  background(0, 20, 10);
 
   actualizar();
 
   noStroke();
-  fill(255, 100, 0);
-  circle(posX, posY, 20);
-  fill(100, 50, 0);
+  fill(200, 250, 10);
+  circle(posX, posY, 90);
+  fill(10, random(10, 200), 0);
   rect(windowWidth / 2, windowHeight - margen, windowWidth, esp);
 }
 
